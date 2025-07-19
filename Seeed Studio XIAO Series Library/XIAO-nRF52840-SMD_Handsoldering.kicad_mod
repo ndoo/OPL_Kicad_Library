@@ -53,6 +53,7 @@
 			)
 		)
 	)
+	(attr smd)
 	(fp_line
 		(start -8.945 8.513)
 		(end -8.945 -8.632)
@@ -370,18 +371,23 @@
 		(thermal_bridge_angle 45)
 		(uuid "fd579d63-bbef-4609-9252-aad3f944a314")
 	)
-	(pad "15" thru_hole roundrect
-		(at -4.5 0.4135 180)
+	(pad "15" smd roundrect
+		(at -4.5 -0.2865 180)
 		(size 2.5 1.1)
-		(drill 2.2
-			(offset 0 0.7)
-		)
-		(layers "*.Cu" "F.Mask" "F.Paste")
-		(remove_unused_layers no)
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(solder_mask_margin 0.0508)
 		(thermal_bridge_angle 45)
 		(uuid "144d3c3d-6207-433c-9e61-4f75722af865")
+	)
+	(pad "15" thru_hole circle
+		(at -4.5 0.4135 180)
+		(size 2.5 2.5)
+		(drill 2.2)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.0508)
+		(uuid "bb6a3f9d-a5aa-4f9a-9278-3c9a213ed489")
 	)
 	(pad "16" smd roundrect
 		(at -4.5 -2.2185 180)
